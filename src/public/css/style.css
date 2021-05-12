@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-color: #333;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.container {
+  overflow-y: scroll;
+  height: 41vh;
+}
+
+.drag {
+  margin: 1rem;
+  padding: 1rem;
+
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.drag.ing {
+  opacity: 0.5;
+}
+
+.fill {
+  width: 100%;
+  display: table-cell;
+}
+.cell {
+  display: table-cell;
+}
+
+#mainTable {
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#mainTable td,
+#mainTable th {
+  border: 1px solid white;
+}
+
+#mainTable .content-col {
+  width: 48%;
+}
+#mainTable .left-col {
+  height: 10rem;
+  width: 4%;
+}
+.sideTitle p {
+  margin: auto;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  border: none !important;
+}
+
+.large-btn {
+  width: 100%;
+  height: 3rem;
+  background-color: #333;
+  border: 1px solid white;
+  color: white;
+}
